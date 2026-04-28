@@ -171,7 +171,7 @@ st.markdown("""
 st.caption(f"Showing **{len(df):,}** customers after filters  |  Total dataset: **{len(full_df):,}** customers  |  Overall churn rate: **20.4%**")
 
 # ── DATA VALIDATION REPORT ───────────────────────────────────────────────────
-with st.expander("Data Validation Report — Click to expand and verify dataset integrity"):
+with st.expander("Data Validation Report — Click to expand."):
     st.markdown("**What these checks mean:**")
     st.markdown("- **Total Rows:** The dataset contains 10,000 customer records — all loaded successfully with no missing values.")
     st.markdown("- **Binary Validation:** HasCrCard, IsActiveMember, and Exited contain only 0 or 1 — confirmed clean.")
