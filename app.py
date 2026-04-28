@@ -191,7 +191,7 @@ with st.expander("Data Validation Report — Click to expand and verify dataset 
     st.success("Churn labeling confirmed — Exited column contains valid 0/1 values only. No nulls.")
 
 # ── EXECUTIVE SUMMARY ─────────────────────────────────────────────────────────
-with st.expander("Executive Summary — Click to expand. Written in plain language for government stakeholders and non-technical readers."):
+with st.expander("Executive Summary — Click to expand."):
     top_profile      = (df.groupby("EngagementProfile")["Exited"].mean() * 100).idxmax()
     top_profile_rate = (df.groupby("EngagementProfile")["Exited"].mean() * 100).max()
     best_product     = int((df.groupby("NumOfProducts")["Exited"].mean()).idxmin())
